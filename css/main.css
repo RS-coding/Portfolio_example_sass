@@ -186,8 +186,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(19, 19, 19, 0.9)), to(rgba(19, 19, 19, 0.3))), url("../Imagens/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(19, 19, 19, 0.9), rgba(19, 19, 19, 0.3)), url("../Imagens/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(19, 19, 19, 0.9)), to(rgba(19, 19, 19, 0.3))), url("../imagens/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(19, 19, 19, 0.9), rgba(19, 19, 19, 0.3)), url("../imagens/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,8 +335,8 @@
   z-index: 1;
   display: -ms-grid;
   display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -451,24 +451,24 @@
     height: 40vh;
   }
   .projects__items {
-    
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     width: 80vw;
   }
   .contact__list {
-    
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .projects__items {
-    
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     width: 85vw;
   }
   .contact__list {
-    
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
 }
